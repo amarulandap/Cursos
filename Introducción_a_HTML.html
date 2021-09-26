@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es una página de aprendizaje en programacion con HTML">
+    <meta name="keywords" content="HTML, CSS, aprender, programar, programación, cursos">
+    <title>Mi primera pagina web</title>
+</head>
+
+<body bgcolor="red">
+    <h1><b>MI PRIMERA PÁGINA WEB</b></h1> <!--b pone la letra en negrilla-->
+
+    <p><i>Esta es la primera página que diseño en mi proceso de 
+        aprendizaje</i></p> <!--i pone la letra en cursiva-->
+
+    <a href="content_section.html">Ir a la página de content_section</a> 
+    <br>
+     <!--con a establezco hipervinculos a otras páginas web-->
+    <a href="https://www.facebook.com" target="_blank">Ir a Facebook</a>
+    <br>
+
+    <a href="https://www.youtube.com" target="_blank">
+        <img src="https://st3.depositphotos.com/1000423/18127/i/600/depositphotos_181278194-stock-photo-soccer-best-moments-mixed-media.jpg" alt="imagen depositphotos_181278194-stock-photo-soccer-best-moments-mixed-media" width="300px"> <!--Se usa la imagen como hipervinculo-->
+    </a>
+
+    <ul>
+        <li>Opción 1</li>
+        <li>Opción 2
+            <ol>
+                <br>
+                <li>Subopción 1</li>
+                <li>Subopción 2</li>
+                <li>Subopción 3</li>
+                <br>
+            </ol>
+        </li>
+        <li><a href="https://www.google.com.co">Opción 3</a></li>
+        <li>Opción 4</li>
+    </ul>
+    <br>
+
+    <table border="2px">
+        <tr>
+            <td>
+                <p>NOMBRE</p>
+            </td>
+            <td>
+                <p>APELLIDO</p>
+            </td>
+            <td>
+                <p>TELEFONO</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Anddres Felipe</p>
+            </td>
+            <td>
+                <p>Marulanda Patiño</p>
+            </td>
+            <td>
+                <p>6042887800</p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <!--Los Iframes nos permiten cargar una pagina web dentro de otra-->
+    <iframe src="file:///C:/Users/Andres%20Marulanda/Desktop/curso_html/content_section.html" width="400px" height="400px" frameborder="0"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/E0ffIrkHLh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--?autoplay=1&mute=1 al final de la url del video se genera la reproducción inmediata-->
+
+    <!--Se pueden insertar mapas de google usando los Iframes, copiando el enlace desde la opción de compartir en el mismo Google-->
+    <br>
+    <form>
+        <input type="text" name="Nombre" id="" placeholder="Nombre">
+        <input type="password" name="Contraseña" id="" placeholder="Contraseña">
+        <input type="date" name="Fecha" id="">
+        <input type="email" name="Correo electrónico" id="" placeholder="Email">
+        <label><input type="checkbox" name="Check" id="">Checkbox de prueba</label>
+    </form>
+</body>
+</html>
