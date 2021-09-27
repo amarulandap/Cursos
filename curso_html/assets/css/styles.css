@@ -1,0 +1,87 @@
+header{
+    border-radius: 10px;
+    border-style: solid;
+    border-color: mediumblue;
+    background-size: 20px;
+    background: rgb(20,158,159);
+    background: linear-gradient(0deg, rgba(20,158,159,1) 0%, rgba(5,31,157,0.6558998599439776) 100%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+#principal-title{
+    font-family: fantasy;
+}
+
+.menu li{
+    display: inline-block;
+    color: rgb(12, 11, 11);
+    font-size: 2em;
+    /*word-spacing: 15px;  Sirve para generar un espacio entre cada uno de las opciones del menu*/
+    padding: 20px;
+}
+
+.menu li:hover{
+    background-color: rgb(4, 88, 4);
+}
+
+.menu li a{
+    text-decoration: none;
+}
+
+.sel{
+    box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+
+.sel:hover {
+    background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+
+}
+
+.sel:active {
+	position:relative;
+	top:1px;
+}
+
+/*@media(max-width 600px)
+    body{
+        display: none;
+        width: calc(100% - 10px);
+    }
+
+    .main{
+        ---------------;
+    }
+
+Animaciones: 
+@keyframes example{
+    caracteristicas de la animación
+
+.animation:hover{
+animation_name: example;
+animation-duration:4s;
+animation: animation_name animation_duration infinite;
+}
+
+Variables:
+:root{
+    -- color_pagina_principal: orange;
+
+    para usarla: var(--orange);
+
+Pseudoelementos:
+.main::first-letter{
+    color:red;
