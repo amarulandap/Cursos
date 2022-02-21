@@ -1,0 +1,21 @@
+{
+  "name": "11_ejerciciocs",
+  "version": "1.0.0",
+  "description": "Práctica cliente servidor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "práctica.",
+    "modelo",
+    "cliente",
+    "servidor"
+  ],
+  "author": "Andres Marulanda",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.25.0"
+  }
+}

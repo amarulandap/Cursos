@@ -1,0 +1,170 @@
+Si te estabas preguntando las razones por las que Node.js es tan popular, has venido al lugar correcto. En un artículo anterior ya habíamos hablado sobre Node.JS, cómo crear una aplicación "hola mundo" y luego explicar los conceptos dentro de la aplicación para comprender mejor los fundamentos de Node.js. Pero estoy seguro que te has quedado con ganas de más.
+
+En este artículo hablaremos de Express.js, un framework de desarrollo para Node.js y actualmente casi estándar de facto para la mayoría de aplicaciones desarrolladas en Node.js en la web de hoy.
+
+NPM: El Node Package Manager
+Comencemos por el principio y hablemos un poco antes sobre NPM. Cuando hablamos de Node.js, no podemos olvidar mencionar el inmenso catálogo de paquetes disponibles. Gracias a estos paquetes o módulos podemos agilizar nuestro desarrollo implementando funcionalidades que de otro modo nos obligarían a estar reinventando la rueda una y otra vez. Para hacer más fácil el proceso de gestión e instalación de estos paquetes venimos utilizando la herramienta NPM que se integra por defecto en la instalación de Node.js podemos mantener todo bajo control, llamadas al repositorio en línea, control de versión y dependencias, etc.  
+
+La lista completa de paquetes de módulos que podemos encontrar está disponible a través del sitio web de NPM o accediendo utilizando la herramienta de la CLI de NPM.
+
+Algunos de los más populares hoy en día son módulos de NPM:
+
+express - Express.js, del que trataremos en este artículo.
+sockjs
+mongojs
+coffee-script
+Underscore
+Así es como instalaría un paquete específico a través de la terminal:
+
+npm install --save package_name
+npm update 
+*Nota: al añadir el parámetro "save", guardaremos el paquete en su carpeta package.json que maneja sus dependencias
+
+Introducción a Express.JS
+Ya estamos en la mitad del artículo y todavía no hemos tratado sobre Express, pero no te impacientes que allá vamos. Primeramente definamos qué es Express. Básicamente es un marco de desarrollo minimalista para Node.js que permite estructurar una aplicación de una manera ágil, nos proporciona funcionalidades como el enrutamiento, opciones para gestionar sesiones y cookies, etc.
+
+Si ya tienes experiencia previa verás que Express se parece mucho a Connect. De hecho Express está basado en gran parte en este otro framework.
+
+Instalación y uso de Express
+Suponiendo que ya tengamos Node.js instalado, el proceso de instalación y uso de Express es muy similar a otros. Lo primero que debemos hacer es crear un directorio que usaremos para contener nuestra aplicación y así convertirlo en nuestro directorio de trabajo.
+
+mkdir myapp
+cd myapp
+El siguiente paso es usar npm para iniciar la creación de un archivo json para nuestra aplicación.
+
+npm init
+Este comando nos solicita información previa, como el nombre y la versión de su aplicación. Pero por el momento y para probar, bastaría con presionar INTRO para aceptar los valores predeterminados para la mayoría de ellos, con la siguiente excepción:
+
+entry point: (index.js)
+Aquí definimos app.js, o el nombre que queramos para el archivo principal. También puedes aceptar el valor por defecto y que sea index.js presionando INTRO para aceptar el nombre de archivo predeterminado sugerido.
+
+El siguiente paso es instalar Express en el directorio myapp y guardarlo en la lista de dependencias. Por ejemplo:
+
+npm install express --save
+Ahora bien, es posible que te preguntes si existe algún modo para instalar Express temporalmente y no agregarlo a la lista de dependencias. Esta sería la solución:
+
+npm install express --no-save
+
+“Hola Mundo” con Express
+Ya hemos comenzado a dar nuestros primeros pasos con Express, ahora necesitamos darle forma a nuestro primer proyecto y cómo no será un sencillo Hola Mundo.
+
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+}) 
+Una vez que terminemos de editar debemos guardarlo en el fichero que hemos indicado al comienzo, en nuestro ejemplo “app.js”.
+
+Explicando un poco el código:
+Línea 1: “require” es una instrucción que usaremos para determinar la necesidad de importar algo. Debemos crear este tipo de instancias en la parte superior del archivo.
+Línea 2: Estamos creando la aplicación rápida configurándola como variable de aplicación.
+Línea 3: “.get” está diciendo que cuando obtiene esa ruta debe dar la respuesta que se especifica en la función. Toma 2 argumentos: (1) la url (2) la función que le dice a express qué enviar a la persona que hace la solicitud.
+Línea 5: “.listen” vinculará la aplicación al puerto de escucha de nuestra máquina.
+Si todo es correcto. Solo nos resta usar “node” para cargar nuestra primer programa escrito usando express:
+
+node app.js
+Y listo. Al abrir nuestro navegador apuntando a http://localhost:3000/ ya podremos ver el resultado.
+
+Express-generator
+Esto es sólo el principio de las cosas que podemos hacer pero a medida que nuestra aplicación gane en complejidad necesitaremos poner un poco de orden. Express-generator es una herramienta generadora de aplicaciones para crear rápidamente un esqueleto de aplicación. A partir de Node.js 8.2.0 es posible ejecutar el generador de aplicaciones con el comando npx:
+
+npx express-generator
+Para versiones más antiguas podemos usar npm:
+
+npm install -g express-generator
+express
+Por ejemplo, para crear una aplicación llamada myapp. La aplicación se creará como hemos visto en el ejemplo anterior en una carpeta llamada myapp en el directorio de trabajo actual y el motor de visualización se configurará en Pug:
+
+$ express --view=pug myapp
+
+   create : myapp
+   create : myapp/package.json
+   create : myapp/app.js
+   create : myapp/public
+   create : myapp/public/javascripts
+   create : myapp/public/images
+   create : myapp/routes
+   create : myapp/routes/index.js
+   create : myapp/routes/users.js
+   create : myapp/public/stylesheets
+   create : myapp/public/stylesheets/style.css
+   create : myapp/views
+   create : myapp/views/index.pug
+   create : myapp/views/layout.pug
+   create : myapp/views/error.pug
+   create : myapp/bin
+   create : myapp/bin/www
+Y luego se instalarán las dependencias:
+
+cd myapp
+npm install
+La aplicación generada tendrá la siguiente estructura de directorios:
+
+.
+├── app.js
+├── bin
+│   └── www
+├── package.json
+├── public
+│   ├── images
+│   ├── javascripts
+│   └── stylesheets
+│       └── style.css
+├── routes
+│   ├── index.js
+│   └── users.js
+└── views
+    ├── error.pug
+    ├── index.pug
+    └── layout.pug
+
+7 directories, 9 files
+En MacOS o Linux, ejecutamos la aplicación con este comando:
+
+$ DEBUG=myapp:* npm start
+Mientras que en Windows desde el Command Prompt, usaremos este comando:
+
+> set DEBUG=myapp:* & npm start
+En Windows PowerShell, es un poco diferente:
+
+PS> $env:DEBUG='myapp:*'; npm start
+Y como hemos hecho antes, abriremos el navegador apuntando a http://localhost:3000/ para acceder a nuestra app.
+
+Templating:Usando middleware
+Avanzando un poco más en este tutorial, debemos hablar del término middleware. El middleware es cualquier cantidad de funciones que son invocadas por la capa de enrutamiento Express.js antes de que su controlador de solicitud final lo sea. Básicamente, te permite configurar cómo funciona tu aplicación express.
+
+Para agregar middleware haremos lo siguiente:
+
+Desde la consola y en la raíz crearemos una carpeta llamada Public y crearemos un archivo html a continuación:
+mkdir public 
+cd public 
+touch test.html
+Pegamos el siguiente contenido dentro de test.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Page</title>
+  </head>
+  <body>
+    <h1>Test Page</h1>
+    <p>Some text here</p>
+  </body>
+</html>
+Y ahora añadiremos un poco de middleware dentro del fichero server.js:
+const express = require('express');
+var app = express();
+app.use(express.static(__dirname + '/public'));
+app.get('/', (req, res) => {
+    res.send('Hello Express')
+});
+app.listen(process.env.PORT || 3000)
+Como último paso usaremos “nodemon” para cargar nuestra aplicación.
+nodemon server.js
+Y de nuevo abrimos el navegador apuntando a http://localhost:3000/test.html

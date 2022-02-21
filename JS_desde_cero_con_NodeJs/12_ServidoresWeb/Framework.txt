@@ -1,0 +1,85 @@
+Los frameworks forman parte del día a día de cualquier programador web. Es que son estos profesionales, los que están directamente conectados con el desarrollo de software, ya sea para desktop, mobile o web.
+
+Hay muchas definiciones para el término framework. Sin embargo, una de las más fáciles de entender es que se trata de una colección de clases abstractas, objetos y aún patrones dedicados a resolver determinados problemas en una arquitectura flexible y extensible.
+
+Uno de sus diferenciales es el hecho de permitir la reutilización de los códigos con pocas alteraciones. Economizando así, tiempo y energía destinados a los proyectos.
+
+Pero, ¿qué son los frameworks, para qué ellos sirven y cuáles son sus principales ventajas? ¡Descúbrelo ahora!
+
+¿Qué son los frameworks?
+Los frameworks son una especie de template que cuenta con diversas funcionalidades que puede ser utilizada en proyectos. Ellos cuentan con herramientas, sistemas, componentes y guías que agilizan el proceso de creación de soluciones; siendo, por lo tanto, un artificio esencial en la vida de un profesional en TI.
+
+Es importante destacar que los frameworks no son lo mismo que las bibliotecas. Una biblioteca se utiliza para trabajar de forma independiente de donde esta será implementada; mientras que un framework, al ser adoptado, regirá, conducirá y guiará todo el desarrollo de la aplicación que está siendo construida con este.
+
+Por lo tanto, dentro de un framework, existen muchas bibliotecas.
+
+¡Observa el siguiente ejemplo para entender la diferencia!
+
+Estás utilizando la biblioteca Jquery durante el desarrollo de tu sitio;
+Si, en algún momento, piensas que esta no es útil, puedes retirarla de la aplicación;
+Para esto, debes cambiar el código para retirar las partes donde era utilizado antes.
+Si decides desarrollar tu sitio web utilizando un framework, no podrás dejar de usarlo en medio del proceso, solamente si estás pensando iniciar el proyecto desde cero.
+
+
+***********
+¿Para qué sirven los frameworks?
+El principal objetivo de los frameworks es resolver problemas recurrentes con abordaje genérico. Gracias a eso, el desarrollador web no necesita reescribir softwares, y se puede enfocar en resolver los problemas en sí.
+
+Los frameworks también ayudan en el desarrollo rápido y seguro de las aplicaciones. Sus funcionalidades permiten atender cualquier necesidad del profesional, aunque el framework seleccionado sea direccionado a la función deseada.
+
+En este escenario, es importante conocer las tecnologías de fondo. Pues no vale la pena aventurarse en un framework sin conocer los aspectos básicos de JavaScript, por ejemplo.
+
+***********
+Principales ventajas de utilizar los frameworks
+Los frameworks cuentan con muchas ventajas, lo que justifica el hecho de que sean tan utilizados.
+
+Una de estas es el hecho de optimizar el tiempo de desarrollo. Con este, el profesional no perderá necesitar programar a partir de una hoja en blanco. Este ofrece funcionalidades ya listas o fácilmente adaptables a la demanda del proyecto.
+
+Los frameworks cuentan con una curva de aprendizaje simplificada y que, normalmente, es pequeña. Incluso, los frameworks más utilizados tienen gran cantidad de documentación y una comunidad activa, lo que es importante a la hora de compartir y obtener conocimiento.
+
+Otra ventaja de los frameworks es en cuanto a la seguridad. Los frameworks más usados disponen de forums de desarrolladores web que están empeñados en mantenerlos seguros, corrigiendo rápidamente las vulnerabilidades encontradas.
+
+Además de sus características principales, existen otros diferenciales:
+
+Reducción en la incidencia de bugs, pues los códigos de los frameworks tienen a pasar por diversas pruebas antes de que sean habilitados;
+Estandarización de códigos, teniendo en vista que el desarrollador debe seguir el mismo patrón de codificación utilizado en el framework;
+Reducción de costos operativos, pues agiliza el desarrollo de un software;
+Mayor consistencia de las aplicaciones, visto que la cantidad de fallas es menor que si estas hubieran sido producidas integralmente desde el inicio.
+
+***********
+¿Cuáles son sus desventajas?
+Por más extraño que pueda parecer, la seguridad puede ser vista como una desventaja. Esto porque una vulnerabilidad encontrada puede ser rápidamente difundida, pudiendo ser aprovechada por malhechores de la web.
+
+Para no caer en este tipo de problema, es importante mantener las actualizaciones al día.
+
+Otra desventaja que también tiene sus contradicciones es el hecho de que existen diversos frameworks en el mercado. Esto representa la posibilidad de escoger el tipo inadecuado en un proyecto.
+
+Algunos frameworks fueron desarrollados para atender sistemas complejos; y otros, más simples. Por esta razón, escoger erróneamente puede ocasionar perdida en el rendimiento, y un resultado bastante diferente al esperado.
+
+Es justamente por el hecho de que los frameworks pueden llevar esta estructura excesiva para un proyecto que quizá no lo necesite, que ya existe una línea de desarrolladores que no apoya su uso.
+
+A pesar de esto, los frameworks tienen más ventajas que desventajas, aún más si escoges trabajar con el tipo correcto para tu proyecto.
+
+***********
+¿Cuáles son los principales tipos de frameworks?
+Como dijimos anteriormente, hay muchos tipos de frameworks disponibles en el mercado, variando conforme al lenguaje y su uso. Conoce algunos de ellos:
+
+Frameworks front-end
+Bootstrap;
+Foundation;
+Materialize.
+Frameworks en JavaScript
+Angular;
+Vue.js.
+Frameworks back-end
+Laravel, para PHP;
+CodeIgniter, para PHP;
+Rails, para Ruby;
+.Net Framework, para plataforma .Net;
+Django, para Python;
+Express, para Node.js;
+Ionic, para crear aplicaciones mobile;
+Struts, para Java.
+Recuerda que los frameworks pueden ser muy útiles en el desarrollo de software, una vez que eliminan la necesidad de iniciar los proyectos desde cero.
+
+Es importante estudiar las opciones disponibles para certificarse de que este no ofrece más o menos funcionalidades de las que necesitas.
